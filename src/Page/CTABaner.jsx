@@ -21,8 +21,8 @@ export default function CTABanner() {
       <div className="absolute inset-0 bg-black/60"></div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4 py-8 md:py-0">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 leading-snug">
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-2 py-8 md:py-0">
+        <h2 className="text-xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 leading-snug">
           Need a Cooling Fix? Our Technicians Are Ready!
         </h2>
 
@@ -32,23 +32,23 @@ export default function CTABanner() {
           today and enjoy a cool, comfortable space year-round!
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 flex-wrap justify-center w-full sm:w-auto px-4 sm:px-0">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 flex-wrap justify-center w-full sm:w-auto px-2 sm:px-0">
           {/* Call Button */}
           <a
-            href="tel:+60123456789"
+            href="tel:+601124419414"
             className="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 px-4 sm:px-6 py-3 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 shadow-lg w-full sm:w-auto"
           >
-            <FaPhoneAlt /> Call for Aircon Support
+            <FaPhoneAlt className="text-xl"/> Call for Aircon Support
           </a>
 
           {/* WhatsApp Button */}
           <a
-            href="https://wa.me/60123456789"
+            href="https://wa.me/601124419414"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 px-4 sm:px-6 py-3 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 shadow-lg w-full sm:w-auto"
           >
-            <FaWhatsapp /> WhatsApp Now
+            <FaWhatsapp className="text-3xl" /> WhatsApp Now
           </a>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import herosection from './assets/cool-space.webp'
-import { FaPhone } from 'react-icons/fa'
+import { FaPhone, FaPhoneAlt } from 'react-icons/fa'
 import Contactfrom from './components/Contactfrom'
 
 export default function HeroSection() {
@@ -26,7 +26,7 @@ export default function HeroSection() {
                             {/* Decorative corners */}
                             <span className="absolute -top-2 -left-2 w-10 sm:w-12 h-1 bg-blue-500"></span>
                             <span className="absolute -top-2 -left-2 w-1 h-10 sm:h-12 bg-blue-500"></span>
-                            
+
                             <span className="absolute -bottom-2 -right-2 w-10 sm:w-12 h-1 bg-blue-500"></span>
                             <span className="absolute -bottom-2 -right-2 w-1 h-10 sm:h-12 bg-blue-500"></span>
 
@@ -52,9 +52,10 @@ export default function HeroSection() {
                                 initial={{ y: 50, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ duration: 0.6, delay: 0.6 }}
+                                onClick={() => { window.location.href = 'tel:+601124419414' }}
                                 className="w-full sm:w-auto mx-auto lg:mx-0 py-3 px-5 font-semibold hover:bg-blue-700 transition-colors cursor-pointer bg-blue-600 mt-6 sm:mt-8 text-white rounded-md uppercase text-sm sm:text-base md:text-lg flex justify-center items-center gap-2.5"
                             >
-                                <FaPhone className="text-lg sm:text-xl md:text-2xl" /> Call Now
+                                <FaPhoneAlt className="text-lg sm:text-xl md:text-2xl" /> Call Now
                             </motion.button>
                         </div>
                     </div>

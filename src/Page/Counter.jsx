@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { FaTools, FaHeadset, FaSmile, FaCheckCircle } from "react-icons/fa";
 
 const countersData = [
@@ -6,38 +6,58 @@ const countersData = [
     id: 1,
     icon: <FaTools size={40} className="text-blue-600" />,
     label: "Years Experience",
-    target: 15,
+    target: 25,
   },
   {
     id: 2,
     icon: <FaHeadset size={40} className="text-green-600" />,
-    label: "Support Staff",
+    label: "Hrs Support Staff",
     target: 24,
   },
   {
     id: 3,
     icon: <FaSmile size={40} className="text-yellow-500" />,
     label: "Happy Clients",
-    target: 500,
+    target: 3000,
   },
   {
     id: 4,
     icon: <FaCheckCircle size={40} className="text-red-600" />,
     label: "Installations",
-    target: 750,
+    target: 2890,
   },
 ];
 
 export default function Counter() {
-  // State to hold counts for each counter
-  const [counts, setCounts] = useState(
-    countersData.map(() => 0)
-  );
+  const [counts, setCounts] = useState(countersData.map(() => 0));
+  const [start, setStart] = useState(false);
+  const sectionRef = useRef(null);
 
+  // Intersection Observer to trigger animation on scroll
   useEffect(() => {
-    // Animate counts from 0 to target over 2 seconds
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setStart(true);
+          observer.disconnect(); // Run only once
+        }
+      },
+      { threshold: 0.3 } // Trigger when 30% of section is visible
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  // Counter animation
+  useEffect(() => {
+    if (!start) return; // Wait until section is visible
+
     const duration = 2000;
-    const frameRate = 30; // 30 updates per second
+    const frameRate = 30;
     const totalFrames = Math.round((duration / 1000) * frameRate);
 
     let frame = 0;
@@ -45,23 +65,26 @@ export default function Counter() {
       frame++;
       setCounts(
         countersData.map(({ target }) =>
-          Math.min(
-            target,
-            Math.floor((target / totalFrames) * frame)
-          )
+          Math.min(target, Math.floor((target / totalFrames) * frame))
         )
       );
       if (frame === totalFrames) clearInterval(interval);
     }, 1000 / frameRate);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [start]);
 
   return (
-    <section className="py-12 bg-gray-50">
-      <h1 className="text-3xl font-bold text-center mb-10">Company Performance Highlight</h1>
+    <section ref={sectionRef} className="py-12 bg-gray-50">
+      <h1 className="text-3xl font-bold text-center mb-3">
+        Company Performance Highlight
+      </h1>
+      <p className="font-semibold text-base md:text-lg text-center mx-auto mb-10">
+        Expert care for your aircon to keep it running at peak performance.{" "}
+        Stay cool and comfortable, season after season.
+      </p>
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-6">
-        {countersData.map(({ id, icon, label, target }, idx) => (
+        {countersData.map(({ id, icon, label }, idx) => (
           <div
             key={id}
             className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center text-center
@@ -70,7 +93,7 @@ export default function Counter() {
             <div className="mb-4">{icon}</div>
             <div className="text-4xl font-bold text-gray-900">
               {counts[idx]}
-              {label === "Happy Clients" || label === "Installations" ? "+" : ""}
+              {label === "Happy Clients" || label === "Installations" ? "+" :''}
             </div>
             <div className="mt-2 text-lg font-medium text-gray-700">{label}</div>
           </div>

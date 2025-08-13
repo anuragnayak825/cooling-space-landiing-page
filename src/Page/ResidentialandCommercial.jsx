@@ -20,7 +20,7 @@ export default function ResidentialandCommercial() {
                             Whether you’re upgrading to a new unit or need a quick tune-up, we’re here to keep your home cool and comfortable.
                         </p>
                         <div className="flex justify-center items-center mt-6">
-                            <button className="text-lg font-semibold cursor-pointer group 
+                            <button onClick={() => { window.location.href = 'https://wa.me/601124419414' }} className="text-lg font-semibold cursor-pointer group 
                                                text-white bg-blue-600 rounded-md px-4 py-2 flex 
                                                justify-center items-center gap-3 
                                                hover:bg-blue-800 transition-colors duration-300">
@@ -41,7 +41,7 @@ export default function ResidentialandCommercial() {
                             At Super Tasker, we provide complete commercial aircon solutions — from installation to maintenance and repairs — ensuring your business stays cool, efficient, and running smoothly all year round.
                         </p>
                         <div className="flex justify-center items-center mt-6">
-                            <button className="text-lg font-semibold cursor-pointer group 
+                            <button onClick={()=>{window.location.href='https://wa.me/601124419414'}} className="text-lg font-semibold cursor-pointer group 
                                                text-white bg-blue-600 rounded-md px-4 py-2 flex 
                                                justify-center items-center gap-3 
                                                hover:bg-blue-800 transition-colors duration-300">

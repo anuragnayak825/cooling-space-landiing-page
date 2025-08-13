@@ -33,14 +33,14 @@ export default function WhyChooseUs() {
     return (
         <div className='w-full h-auto lg:px-10 py-10'>
             {/* Heading */}
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-                Why Choose Us
+            <h2 className="text-2xl md:text-4xl font-bold text-center mb-4">
+                Your Trusted Cooling Experts
             </h2>
-            <p className="text-lg text-gray-600 text-center mb-10 max-w-2xl mx-auto">
+            <p className="text-sm md:text-lg text-gray-600 text-center mb-10 max-w-2xl mx-auto">
                 At Super Tasker, we combine expertise, reliability, and customer-focused service to deliver the best aircon solutions for your home or business.
             </p>
 
-            <div className='flex flex-col lg:flex-row items-center justify-between gap-10 max-w-7xl mx-auto px-4'>
+            <div className='flex flex-col-reverse lg:flex-row items-center justify-between gap-10 max-w-7xl mx-auto px-4'>
                 {/* Features grid */}
                 <div className='flex-1 w-full'>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">

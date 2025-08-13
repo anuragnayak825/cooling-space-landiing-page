@@ -1,5 +1,5 @@
 import React from "react";
-import { FaQuoteLeft } from "react-icons/fa";
+import { FaQuoteLeft, FaStar, FaStarHalfAlt } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 
@@ -39,7 +39,19 @@ export default function ReviewTimelineSwiper() {
   return (
     <section className="py-12 bg-white">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl font-semibold mb-8 text-center">Customer Reviews</h2>
+        {/* Heading with Rating */}
+        <h2 className="text-3xl font-semibold mb-8 text-center flex flex-col items-center">
+          Google Verified Feedback
+          <span className="flex items-center gap-2 mt-2 text-yellow-500 text-xl font-bold">
+            {/* 4 full stars */}
+            {[...Array(4)].map((_, i) => (
+              <FaStar key={i} className="text-yellow-500" />
+            ))}
+            {/* 1 half star */}
+            <FaStarHalfAlt className="text-yellow-500" />
+          </span>
+          <span className="ml-2 text-gray-700 font-medium">4.7</span>
+        </h2>
 
         <Swiper
           modules={[Pagination, Autoplay]}
@@ -57,31 +69,18 @@ export default function ReviewTimelineSwiper() {
           }}
           style={{ paddingBottom: "3rem" }}
         >
-          {reviews.map(({ id, name, date, text }, index) => {
-            // Alternate styles per slide index
-            const bgColors = ["bg-blue-50", "bg-green-50", "bg-yellow-50", "bg-purple-50"];
-            const textColors = ["text-blue-900", "text-green-900", "text-yellow-900", "text-purple-900"];
-            const shadowColors = ["shadow-blue-300", "shadow-green-300", "shadow-yellow-300", "shadow-purple-300"];
-
-            const bgColor = bgColors[index % bgColors.length];
-            const textColor = textColors[index % textColors.length];
-            const shadowColor = shadowColors[index % shadowColors.length];
-
+          {reviews.map(({ id, name, text }) => {
             return (
               <SwiperSlide key={id}>
                 <div
-                  className={`relative rounded-lg p-8 mx-4 bg-gray-50 shadow-lg `}
+                  className="relative rounded-lg p-8 mx-4 bg-gray-50 shadow-lg"
                   style={{ minHeight: "220px" }}
                 >
                   <div className="absolute top-6 left-6 opacity-20">
                     <FaQuoteLeft size={50} />
                   </div>
-                  <p className={`mb-6 mt-10 italic font-medium `}>"{text}"</p>
-                  <div className={`font-bold text-lg `}>{name}</div>
-                  
-
-                  {/* Timeline dot */}
-                 
+                  <p className="mb-6 mt-10 italic font-medium">"{text}"</p>
+                  <div className="font-bold text-lg">{name}</div>
                 </div>
               </SwiperSlide>
             );

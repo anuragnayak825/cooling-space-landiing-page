@@ -3,8 +3,10 @@ import { motion } from 'framer-motion';
 import logo from './assets/logo.png';
 import { FaPhone, FaWhatsapp } from 'react-icons/fa';
 import { FaLocationDot } from 'react-icons/fa6';
+import { useNavigate } from 'react-router-dom';
 
 export default function Header() {
+    const nav = useNavigate()
     const [showSticky, setShowSticky] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -53,7 +55,7 @@ export default function Header() {
             >
                 {/* Logo */}
                 <div>
-                    <img src={logo} alt="Logo" className='w-24 md:w-36' />
+                    <img onClick={() => nav('/')} src={logo} alt="Logo" className=' cursor-pointer w-24 md:w-36' />
                 </div>
 
                 {/* Buttons */}
@@ -94,7 +96,7 @@ export default function Header() {
                 </div>
 
                 {/* Contact info (Desktop only) */}
-               
+
             </motion.header>
         </>
     );
