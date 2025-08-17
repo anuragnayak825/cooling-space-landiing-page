@@ -1,5 +1,5 @@
 import React from "react";
-import { FaTools, FaWrench, FaClipboardCheck, FaArrowRight } from "react-icons/fa";
+import { FaTools, FaWrench, FaClipboardCheck, FaArrowRight, FaWhatsapp } from "react-icons/fa";
 import Service from "../assets/service.webp";
 import Install from "../assets/install.webp";
 import maintain from "../assets/Repair.webp";
@@ -49,7 +49,7 @@ export default function Services() {
           {services.map((service, i) => (
             <div
               key={i}
-              className="bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col"
+              className="bg-white shadow-lg rounded-2xl overflow-hidden transition-all duration-300 flex flex-col"
             >
               <div className="relative">
                 <img
@@ -70,9 +70,9 @@ export default function Services() {
                 <p className="text-gray-600 text-lg mb-6 flex-grow">
                   {service.desc}
                 </p>
-                <button onClick={()=>{window.location.href='https://wa.me/601124419414'}} className="mt-auto flex group justify-between items-center cursor-pointer px-5 py-2 text-lg bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
-                  Book Now{" "}
-                  <FaArrowRight className="group-hover:translate-x-4 transform transition-transform duration-300" />
+                <button onClick={() => { window.location.href = 'https://wa.me/601124419414' }} className="mt-auto flex group justify-center gap-2.5 items-center cursor-pointer px-5 py-2 text-lg bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition">
+                  <FaWhatsapp className=" text-2xl transform transition-transform duration-300" />
+                  Book On WhatsApp{" "}
                 </button>
               </div>
             </div>

@@ -59,6 +59,11 @@ export default function WhyChooseUs() {
                             </div>
                         ))}
                     </div>
+                    <div className='w-full flex justify-center items-center'>
+
+                        <button className='w-auto zoom-up-in my-0 mx-auto px-4 py-2.5 bg-yellow-400 font-bold text-xl rounded-md shadow-md shadow-gray-400 cursor-pointer mt-6'>Get Special 20% Off Today</button>
+                    </div>
+
                 </div>
 
                 {/* Image */}

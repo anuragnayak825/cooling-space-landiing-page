@@ -10,6 +10,7 @@ import Counter from './Counter'
 import ReviewTimeline from './ReviewTimeline'
 import OfferSection from './OfferSection'
 import Footer1 from './Footer1'
+import Pricing from './Pricing'
 
 // import HeroSection from '../HeroSection'
 
@@ -18,6 +19,7 @@ export default function LandingPage() {
         <>
             <Header />
             <HeroSection />
+            <Pricing/>
             <About />
             <OfferSection />
             <Services />

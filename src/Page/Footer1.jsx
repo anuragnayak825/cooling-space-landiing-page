@@ -25,7 +25,7 @@ export default function Footer1() {
                     <div className="flex items-center gap-3 bg-[#1f3356] p-3 rounded-md w-full md:w-auto justify-center md:justify-start">
                         <FaPhone className="text-yellow-400 text-lg" />
                         <span>
-                            +60 16-382 4522</span>
+                            +60 11-2441 9414</span>
                     </div>
                     <div className="flex items-center gap-3 bg-[#1f3356] p-3 rounded-md w-full md:w-auto justify-center md:justify-start">
                         <FaEnvelope className="text-yellow-400 text-lg" />

@@ -20,30 +20,41 @@ export default function HeroSection() {
                 <div className="flex flex-col lg:flex-row justify-center items-center lg:items-stretch px-4 sm:px-6 lg:10 xl:px-24 py-8 sm:py-10 gap-8 overflow-hidden">
 
                     {/* LEFT TEXT CONTENT */}
-                    <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start justify-center">
-                        <div className="w-full max-w-2xl relative px-2 sm:px-5 py-5">
+                    <div className="w-full lg:w-[55%]  flex flex-col  items-start justify-center">
+                        <div className="w-full max-w-4xl relative px-2 sm:px-10  py-5">
 
                             {/* Decorative corners */}
-                            <span className="absolute -top-2 -left-2 w-10 sm:w-12 h-1 bg-blue-500"></span>
-                            <span className="absolute -top-2 -left-2 w-1 h-10 sm:h-12 bg-blue-500"></span>
+                            {/* Decorative corners */}
+                            <span className="absolute hidden lg:block -top-2 -left-2  md:w-3/4 h-0.5 bg-blue-500"></span>
+                            <span className="absolute hidden lg:block -top-2 -left-2 w-6 sm:w-8 md:w-6 lg:w-6 h-6 sm:h-8 md:h-6 bg-blue-500"></span>
+                            <span className="absolute hidden lg:block -top-2 right-[20%] sm:right-[26%] w-0.5 h-8 sm:h-10 md:h-12 bg-blue-500"></span>
+                            <span className="absolute hidden lg:block -top-2 -left-2 w-0.5 h-1/2 sm:h-[70%] md:h-[85%] xl:h-[86%] bg-blue-500 "></span>
+                            <span className="absolute hidden lg:block bottom-[69px] -left-2 w-6 sm:w-8 md:w-10 h-0.5 bg-blue-500"></span>
 
-                            <span className="absolute -bottom-2 -right-2 w-10 sm:w-12 h-1 bg-blue-500"></span>
-                            <span className="absolute -bottom-2 -right-2 w-1 h-10 sm:h-12 bg-blue-500"></span>
+
+                            {/* Decorative corners */}
+                            <span className="absolute   block lg:hidden   -top-2 -left-2 w-10 sm:w-12 h-1 bg-blue-500"></span>
+                            <span className="absolute   block lg:hidden  -top-2 -left-2 w-1 h-10 sm:h-12 bg-blue-500"></span>
+
+                            <span className="absolute   block lg:hidden -bottom-2 -right-2 w-10 sm:w-12 h-1 bg-blue-500"></span>
+                            <span className="absolute block lg:hidden  -bottom-2 -right-2 w-1 h-10 sm:h-12 bg-blue-500"></span>
+
+
 
                             <motion.h1
                                 initial={{ x: -100, opacity: 0 }}
                                 animate={{ x: 0, opacity: 1 }}
                                 transition={{ duration: 0.8 }}
-                                className="text-black text-xl sm:text-3xl md:text-4xl xl:text-5xl font-bold text-center lg:text-left"
+                                className="text-black text-xl sm:text-3xl md:text-4xl xl:text-6xl tracking-wide font-bold  lg:text-left"
                             >
-                                Get a No-Obligation Aircon Service Quote Today – Selangor & Kuala Lumpur
+                                Your Trusted Aircon Experts in Selangor <br className=' hidden md:block' /> & Kuala Lumpur
                             </motion.h1>
 
                             <motion.p
                                 initial={{ x: 100, opacity: 0 }}
                                 animate={{ x: 0, opacity: 1 }}
                                 transition={{ duration: 0.8, delay: 0.3 }}
-                                className="text-base sm:text-lg md:text-xl mt-4 sm:mt-6 font-semibold text-center lg:text-left"
+                                className="text-base sm:text-lg md:text-xl mt-4 sm:mt-10 font-semibold lg:text-left"
                             >
                                 Comprehensive aircond care — servicing, repairs, leak fixes, troubleshooting, and installations in one place
                             </motion.p>
@@ -53,9 +64,9 @@ export default function HeroSection() {
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ duration: 0.6, delay: 0.6 }}
                                 onClick={() => { window.location.href = 'tel:+601124419414' }}
-                                className="w-full sm:w-auto mx-auto lg:mx-0 py-3 px-5 font-semibold hover:bg-blue-700 transition-colors cursor-pointer bg-blue-600 mt-6 sm:mt-8 text-white rounded-md uppercase text-sm sm:text-base md:text-lg flex justify-center items-center gap-2.5"
+                                className="w-auto sm:w-auto lg:mx-0  py-6 px-5 font-semibold hover:bg-blue-700 transition-colors cursor-pointer bg-blue-600 mt-6 sm:mt-10 text-white uppercase text-sm sm:text-base md:text-lg flex justify-center items-center gap-2.5"
                             >
-                                <FaPhoneAlt className="text-lg sm:text-xl md:text-2xl" /> Call Now
+                                <FaPhoneAlt className="text-lg sm:text-xl md:text-2xl" /> Talk to Our Expert
                             </motion.button>
                         </div>
                     </div>
@@ -65,7 +76,7 @@ export default function HeroSection() {
                         initial={{ x: 150, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 0.8, delay: 0.4 }}
-                        className="w-full lg:w-1/2 flex  justify-center lg:justify-end lg:px-3.5 items-center"
+                        className="w-full lg:w-[40%] flex  justify-center lg:justify-end lg:px-3.5 items-center"
                     >
                         <div className="w-full max-w-md ">
                             <Contactfrom />

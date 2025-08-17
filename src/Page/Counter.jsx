@@ -18,13 +18,13 @@ const countersData = [
     id: 3,
     icon: <FaSmile size={40} className="text-yellow-500" />,
     label: "Happy Clients",
-    target: 3000,
+    target: 99,
   },
   {
     id: 4,
     icon: <FaCheckCircle size={40} className="text-red-600" />,
     label: "Installations",
-    target: 2890,
+    target: 3000,
   },
 ];
 
@@ -93,7 +93,7 @@ export default function Counter() {
             <div className="mb-4">{icon}</div>
             <div className="text-4xl font-bold text-gray-900">
               {counts[idx]}
-              {label === "Happy Clients" || label === "Installations" ? "+" :''}
+              {label === "Installations" || label === "Years Experience" ? "+" : label === "Happy Clients" ? '%':'' }
             </div>
             <div className="mt-2 text-lg font-medium text-gray-700">{label}</div>
           </div>

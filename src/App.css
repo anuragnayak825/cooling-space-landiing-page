@@ -1,14 +1,70 @@
 @keyframes rotate-vibrate {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(4deg); }
-  50% { transform: rotate(-4deg); }
-  75% { transform: rotate(4deg); }
-  100% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(4deg);
+  }
+
+  50% {
+    transform: rotate(-4deg);
+  }
+
+  75% {
+    transform: rotate(4deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .vibrate-rotate {
   animation: rotate-vibrate 0.4s ease-in-out infinite;
 }
-*{
+
+* {
   scroll-behavior: smooth;
+}
+
+@keyframes zoomUpIn {
+  0% {
+    transform: scale(1) ;
+   
+  }
+
+  50% {
+    transform: scale(1.07) ;
+   
+  }
+
+  100%{
+     transform: scale(1) ;
+  }
+
+}
+
+.zoom-up-in {
+  animation: zoomUpIn 2s ease-in-out infinite;
+}
+@keyframes zoomUpIn-icon {
+  0% {
+    transform: scale(1) ;
+   
+  }
+
+  50% {
+    transform: scale(1.2) ;
+   
+  }
+
+  100%{
+     transform: scale(1) ;
+  }
+
+}
+
+.zoom-up-in-icon {
+  animation: zoomUpIn-icon .5s ease-in-out infinite;
 }
