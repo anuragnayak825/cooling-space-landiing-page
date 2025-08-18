@@ -39,8 +39,8 @@ export default function ContactForm() {
   }, []);
 
   return (
-    <form className="w-full max-w-md mx-auto border border-gray-300 bg-white px-4 py-6 sm:px-6 md:px-8 rounded-md shadow-xl shadow-gray-500 space-y-6">
-      <h1 className="text-start text-xl md:text-2xl font-bold text-gray-800 ">Tell Us What You Need</h1>
+    <form className="w-full  lg:max-w-md mx-auto border border-gray-300 bg-white px-4 py-6 sm:px-6 md:px-8 rounded-md shadow-xl shadow-gray-500 space-y-6">
+      <h1 className="text-center text-xl md:text-2xl font-bold text-gray-800 ">Tell Us What You Need</h1>
 
       {/* Name */}
       <div className="relative w-full">
@@ -155,7 +155,7 @@ export default function ContactForm() {
       <div className="text-center">
         <button
           type="submit"
-          className="w-full sm:w-auto px-6 py-2 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition-all"
+          className="w-full px-6 py-2 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition-all"
         >
           Submit
         </button>

@@ -41,7 +41,7 @@ export default function ReviewTimelineSwiper() {
       <div className="max-w-6xl mx-auto px-6">
         {/* Heading with Rating */}
         <h2 className="text-3xl font-semibold mb-8 text-center flex flex-col items-center">
-          Google Verified Feedback
+          Google Verified
           <span className="flex items-center gap-2 mt-2 text-yellow-500 text-xl font-bold">
             {/* 4 full stars */}
             {[...Array(4)].map((_, i) => (
@@ -49,8 +49,8 @@ export default function ReviewTimelineSwiper() {
             ))}
             {/* 1 half star */}
             <FaStarHalfAlt className="text-yellow-500" />
+            <span className="ml-2 text-gray-700 font-medium">4.7</span>
           </span>
-          <span className="ml-2 text-gray-700 font-medium">4.7</span>
         </h2>
 
         <Swiper

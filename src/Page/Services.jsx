@@ -3,6 +3,7 @@ import { FaTools, FaWrench, FaClipboardCheck, FaArrowRight, FaWhatsapp } from "r
 import Service from "../assets/service.webp";
 import Install from "../assets/install.webp";
 import maintain from "../assets/Repair.webp";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function Services() {
   // Preload images on component mount
@@ -45,10 +46,10 @@ export default function Services() {
           systems performing at their best, season after season.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
           {services.map((service, i) => (
             <div
-            
+
               key={i}
               className="bg-white shadow-lg rounded-2xl overflow-hidden transition-all duration-300 flex flex-col"
             >
@@ -71,9 +72,9 @@ export default function Services() {
                 <p className="text-gray-600 text-lg mb-6 flex-grow">
                   {service.desc}
                 </p>
-                <button onClick={() => { window.location.href = 'https://wa.me/601124419414' }} className="mt-auto flex group justify-center gap-2.5 items-center cursor-pointer px-5 py-2 text-lg bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition">
-                  <FaWhatsapp className=" text-2xl transform transition-transform duration-300" />
-                  Book On WhatsApp{" "}
+                <button onClick={() => { window.location.href = 'https://wa.me/601124419414' }} className="mt-auto flex group justify-center gap-2.5 items-center cursor-pointer px-5 py-2 text-lg bg-blue-600 font-bold text-white rounded-lg hover:bg-blue-700 transition">
+                  Book Now{" "}
+                  <FaArrowRightLong className=" ml-2.5 group-hover:translate-x-2.5 text-2xl transform transition-transform duration-300" />
                 </button>
               </div>
             </div>

@@ -22,8 +22,8 @@ export default function CTABanner() {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-2 py-8 md:py-0">
-        <h2 className="text-xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 leading-snug">
-          Need a Cooling Fix? Our Technicians Are Ready!
+        <h2 className="text-xl sm:text-3xl md:text-[30px] lg:text-4xl font-bold mb-3 sm:mb-4 leading-snug">
+          Need a Aircon Cooling Fix? Our Technicians Are Ready!
         </h2>
 
         <p className="text-sm sm:text-base md:text-lg font-semibold max-w-5xl mb-4 sm:mb-6 text-center mx-auto px-2">

@@ -25,19 +25,19 @@ export default function HeroSection() {
 
                             {/* Decorative corners */}
                             {/* Decorative corners */}
-                            <span data-aos="fade-right" className="absolute hidden lg:block -top-2 -left-2  md:w-3/4 h-0.5 bg-blue-500"></span>
-                            <span data-aos="fade-right" className="absolute hidden lg:block -top-2 -left-2 w-6 sm:w-8 md:w-6 lg:w-6 h-6 sm:h-8 md:h-6 bg-blue-500"></span>
-                            <span data-aos="fade-right" className="absolute hidden lg:block -top-2 right-[20%] sm:right-[26%] w-0.5 h-8 sm:h-10 md:h-12 bg-blue-500"></span>
-                            <span data-aos="fade-right" className="absolute hidden lg:block -top-2 -left-2 w-0.5 h-1/2 sm:h-[70%] md:h-[85%] xl:h-[86%] bg-blue-500 "></span>
-                            <span data-aos="fade-right" className="absolute hidden lg:block bottom-[69px] -left-2 w-6 sm:w-8 md:w-10 h-0.5 bg-blue-500"></span>
+                            <span data-aos="fade-right" className="absolute hidden xl:block -top-2 -left-2 lg:w-[60%] xl:w-3/4 h-0.5 bg-blue-500"></span>
+                            <span data-aos="fade-right" className="absolute hidden xl:block -top-2 -left-2  w-6 sm:w-8 md:w-6 lg:w-6 h-6 sm:h-8 md:h-6 bg-blue-500"></span>
+                            <span data-aos="fade-right" className="absolute hidden xl:block -top-2 right-[42%] sm:right-[26%] w-0.5 h-8 sm:h-10 md:h-12 bg-blue-500"></span>
+                            <span data-aos="fade-right" className="absolute hidden xl:block -top-2 -left-2 w-0.5 h-1/2 sm:h-[70%] md:h-[85%] xl:h-[86%] bg-blue-500 "></span>
+                            <span data-aos="fade-right" className="absolute hidden xl:block bottom-[69px] -left-2 w-6 sm:w-8 md:w-10 h-0.5 bg-blue-500"></span>
 
 
                             {/* Decorative corners */}
-                            <span data-aos="fade-right" className="absolute   block lg:hidden   -top-2 -left-2 w-10 sm:w-12 h-1 bg-blue-500"></span>
-                            <span data-aos="fade-right" className="absolute   block lg:hidden  -top-2 -left-2 w-1 h-10 sm:h-12 bg-blue-500"></span>
+                            <span data-aos="fade-right" className="absolute   block xl:hidden   -top-2 -left-2 w-10 sm:w-12 h-1 bg-blue-500"></span>
+                            <span data-aos="fade-right" className="absolute   block xl:hidden  -top-2 -left-2 w-1 h-10 sm:h-12 bg-blue-500"></span>
 
-                            <span data-aos="fade-left" className="absolute   block lg:hidden -bottom-2 -right-2 w-10 sm:w-12 h-1 bg-blue-500"></span>
-                            <span data-aos="fade-left" className="absolute block lg:hidden  -bottom-2 -right-2 w-1 h-10 sm:h-12 bg-blue-500"></span>
+                            <span data-aos="fade-left" className="absolute   block xl:hidden -bottom-2 -right-2 w-10 sm:w-12 h-1 bg-blue-500"></span>
+                            <span data-aos="fade-left" className="absolute block xl:hidden  -bottom-2 -right-2 w-1 h-10 sm:h-12 bg-blue-500"></span>
 
 
 
@@ -45,7 +45,7 @@ export default function HeroSection() {
                                 initial={{ x: -100, opacity: 0 }}
                                 animate={{ x: 0, opacity: 1 }}
                                 transition={{ duration: 0.8 }}
-                                className="text-black text-xl sm:text-3xl md:text-4xl xl:text-6xl tracking-wide font-bold  lg:text-left"
+                                className="text-black text-xl sm:text-3xl md:text-4xl xl:text-6xl tracking-wide font-bold md:text-center  lg:text-left"
                             >
                                 Your Trusted Aircon Experts in Selangor <br className=' hidden md:block' /> & Kuala Lumpur
                             </motion.h1>
@@ -54,7 +54,7 @@ export default function HeroSection() {
                                 initial={{ x: 100, opacity: 0 }}
                                 animate={{ x: 0, opacity: 1 }}
                                 transition={{ duration: 0.8, delay: 0.3 }}
-                                className="text-base sm:text-lg md:text-xl mt-4 sm:mt-10 font-semibold lg:text-left"
+                                className="text-base sm:text-lg md:text-xl mt-4 sm:mt-10 font-semibold md:text-center lg:text-left"
                             >
                                 Comprehensive aircond care — servicing, repairs, leak fixes, troubleshooting, and installations in one place
                             </motion.p>
@@ -64,7 +64,7 @@ export default function HeroSection() {
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ duration: 0.6, delay: 0.6 }}
                                 onClick={() => { window.location.href = 'tel:+601124419414' }}
-                                className="w-auto sm:w-auto lg:mx-0  py-6 px-5 font-semibold hover:bg-blue-700 transition-colors cursor-pointer bg-blue-600 mt-6 sm:mt-10 text-white uppercase text-sm sm:text-base md:text-lg flex justify-center items-center gap-2.5"
+                                className="w-auto mx-auto sm:w-auto lg:mx-0  py-6 px-5 font-semibold hover:bg-blue-700 transition-colors cursor-pointer bg-blue-600 mt-6 sm:mt-10 text-white uppercase text-sm sm:text-base md:text-lg flex justify-center items-center gap-2.5"
                             >
                                 <FaPhoneAlt className="text-lg sm:text-xl md:text-2xl" /> Talk to Our Expert
                             </motion.button>
@@ -78,7 +78,7 @@ export default function HeroSection() {
                         transition={{ duration: 0.8, delay: 0.4 }}
                         className="w-full lg:w-[40%] flex  justify-center lg:justify-end lg:px-3.5 items-center"
                     >
-                        <div className="w-full max-w-md ">
+                        <div className="w-full lg:max-w-md ">
                             <Contactfrom />
                         </div>
                     </motion.div>

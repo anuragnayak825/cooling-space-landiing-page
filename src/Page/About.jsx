@@ -56,7 +56,7 @@ export default function About() {
                     data-aos="zoom-in-right"
                     src={Aboutimg}
                     alt="Aircon Service"
-                    className="w-full max-w-[600px] h-auto rounded-md shadow-md object-cover"
+                    className="w-full max-w-[600px] lg:max-w-[640px] xl:max-w-[600px] h-auto rounded-md shadow-md object-cover"
                 />
             </div>
 
@@ -71,24 +71,24 @@ export default function About() {
                 {/* Add a container to stagger children */}
                 <motion.div
                     variants={contentContainer}
-                    className="w-full flex flex-col items-center lg:items-start space-y-6 text-center lg:text-left"
+                    className="w-full flex flex-col items-center lg:items-start space-y-6 lg:space-y-3 xl:space-y-6 text-center lg:text-left"
                 >
                     <motion.button
-                        className="px-4 py-2 font-semibold bg-white rounded-2xl shadow-md shadow-gray-300 text-base sm:text-lg"
+                        className="px-4 py-2 font-semibold bg-gray-50 rounded-md shadow-md shadow-gray-300 text-base sm:text-lg lg:text-sm xl:text-lg"
                         variants={slideRight}
                     >
                         You’re in the Right Place
                     </motion.button>
 
                     <motion.h1
-                        className="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug"
+                        className="text-2xl sm:text-3xl md:text-4xl lg:text-[28px] xl:text-[40px] font-bold leading-snug"
                         variants={slideRight}
                     >
                         Find Nearest Service From Your Home
                     </motion.h1>
 
                     <motion.p
-                        className="text-base sm:text-lg font-medium text-gray-600 leading-relaxed"
+                        className="text-base sm:text-lg lg:text-sm xl:text-lg font-medium text-gray-600 leading-relaxed"
                         variants={slideRight}
                     >
                         If you’re looking for expert aircon installation, repair, or maintenance, you’ve come to the right place.
@@ -98,7 +98,7 @@ export default function About() {
 
                     <motion.button
                         onClick={() => { window.location.href = 'https://wa.me/601124419414' }}
-                        className="px-4 sm:px-6 cursor-pointer py-2 sm:py-3 font-bold text-lg tracking-wide bg-sky-500 hover:bg-sky-600 text-white rounded-md transition duration-300"
+                        className="px-4 sm:px-6 cursor-pointer py-2 sm:py-3 lg:py-2 xl:py-3 font-bold text-lg tracking-wide bg-sky-500 hover:bg-sky-600 text-white rounded-md transition duration-300"
                         variants={fadeUp}
                     >
                         Schedule My Appointment

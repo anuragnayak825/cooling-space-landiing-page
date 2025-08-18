@@ -3,7 +3,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 export default function OfferSection() {
   return (
-    <section className="max-w-7xl mx-auto my-8 p-4 sm:p-6 bg-gradient-to-r from-blue-700 to-sky-400 rounded-lg shadow-lg flex flex-col md:flex-row items-center md:items-start md:justify-between gap-4 sm:gap-6 text-white text-center md:text-left">
+    <section className="max-w-7xl mx-auto my-8 p-4 sm:p-6 bg-gradient-to-r from-blue-700 to-sky-400 rounded-lg shadow-lg flex flex-col xl:flex-row items-center xl:items-start xl:justify-between gap-4 sm:gap-6 text-white text-center xl:text-left">
 
       {/* Text Section */}
       <div className="flex-1">

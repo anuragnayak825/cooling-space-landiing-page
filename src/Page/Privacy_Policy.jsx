@@ -26,7 +26,7 @@ export default function Privacy_Policy() {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.2 }}
                     >
-                        At <strong>CoolSpac Pro Solution</strong>, your privacy is our top
+                        At <strong>Cool Space Pro Solutions</strong>, your privacy is our top
                         priority. This Privacy Policy explains how we collect, use, and
                         protect the personal data you share when you use our website and
                         services.

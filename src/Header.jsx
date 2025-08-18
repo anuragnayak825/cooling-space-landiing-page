@@ -29,7 +29,7 @@ export default function Header() {
                 </div>
 
                 {/* Buttons aligned horizontally */}
-                <div className='flex space-x-10 items-center w-full  max-w-md lg:max-w-xl'>
+                <div className='flex  space-x-10 items-center w-full  max-w-md lg:max-w-xl'>
                     <a
                         href={whatsappHref}
                         target='_blank'
@@ -41,7 +41,7 @@ export default function Header() {
 
                     <a
                         href={phoneHref}
-                        className='bg-gradient-to-br fixed right-4 lg:right-20 z-50 from-blue-500 via-sky-600 to-sky-700 px-3 py-3 md:py-3  flex justify-center items-center gap-2.5 text-white font-semibold sm:text-sm lg:text-lg tracking-wider rounded-md shadow-md shadow-gray-400 zoom-up-in'
+                        className='bg-gradient-to-br fixed right-4 lg:right-10 xl:right-20 z-50 from-blue-500 via-sky-600 to-sky-700 px-3 py-3 md:py-3  flex justify-center items-center gap-2.5 text-white font-semibold sm:text-sm lg:text-lg tracking-wider rounded-md shadow-md shadow-gray-400 zoom-up-in'
                     >
                         <FaPhoneAlt className='lg:text-xl vibrate-rotate' />+60 11-2441 9414
                     </a>

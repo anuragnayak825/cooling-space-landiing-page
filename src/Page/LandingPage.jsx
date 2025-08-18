@@ -11,6 +11,8 @@ import ReviewTimeline from './ReviewTimeline'
 import OfferSection from './OfferSection'
 import Footer1 from './Footer1'
 import Pricing from './Pricing'
+import ServiceLocations from './ServiceLocations'
+import ServiceProcess from './ServiceProcess'
 
 // import HeroSection from '../HeroSection'
 
@@ -28,7 +30,10 @@ export default function LandingPage() {
             <WhyChooseUs />
             <Counter />
             <CTABanner />
-            <ReviewTimeline />
+
+            <ServiceProcess/>
+            {/* <ServiceLocations/> */}
+            {/* <ReviewTimeline /> */}
             <Footer1 />
             {/* <section className='w-full h-screen'>
 

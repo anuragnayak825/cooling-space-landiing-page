@@ -11,7 +11,7 @@ const countersData = [
   {
     id: 2,
     icon: <FaHeadset size={40} className="text-green-600" />,
-    label: "Hrs Support Staff",
+    label: "Support Staff",
     target: 24,
   },
   {
@@ -83,7 +83,7 @@ export default function Counter() {
         Expert care for your aircon to keep it running at peak performance.{" "}
         Stay cool and comfortable, season after season.
       </p>
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-6">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
         {countersData.map(({ id, icon, label }, idx) => (
           <div
             key={id}
@@ -93,7 +93,7 @@ export default function Counter() {
             <div className="mb-4">{icon}</div>
             <div className="text-4xl font-bold text-gray-900">
               {counts[idx]}
-              {label === "Installations" || label === "Years Experience" ? "+" : label === "Happy Clients" ? '%':'' }
+              {label === "Installations" || label === "Years Experience" ? "+" : label === "Happy Clients" ? '%' : label === "Support Staff" ? ' Hrs' : ''}
             </div>
             <div className="mt-2 text-lg font-medium text-gray-700">{label}</div>
           </div>

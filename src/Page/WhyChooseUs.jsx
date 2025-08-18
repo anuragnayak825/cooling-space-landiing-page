@@ -34,20 +34,22 @@ export default function WhyChooseUs() {
         <div className='w-full h-auto lg:px-10 py-10'>
             {/* Heading */}
             <h2 className="text-2xl md:text-4xl font-bold text-center mb-4">
-                Your Trusted Cooling Experts
+                Your Trusted Aircon Cooling Experts
             </h2>
             <p className="text-sm md:text-lg text-gray-600 text-center mb-10 max-w-2xl mx-auto">
-                At Super Tasker, we combine expertise, reliability, and customer-focused service to deliver the best aircon solutions for your home or business.
+                 we combine expertise, reliability, and customer-focused service to deliver the best aircon solutions for your home or business.
             </p>
 
-            <div className='flex flex-col-reverse lg:flex-row items-center justify-between gap-10 max-w-7xl mx-auto px-4'>
+            <div className='flex flex-col-reverse xl:flex-row items-center justify-between gap-10 max-w-7xl mx-auto px-4'>
                 {/* Features grid */}
                 <div className='flex-1 w-full'>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
                         {serviceFeatures.map((feature, index) => (
                             <div
                                 key={index}
-                                className="bg-white border border-gray-300 shadow-md rounded-xl p-8 flex flex-col items-center text-center hover:shadow-lg transition-all duration-300"
+                                // data-aos=''
+                                data-aos={`${index === 0 || 2 ? 'flip-left' : 'flip-right'}`}
+                                className="bg-white border border-gray-300 shadow-md rounded-tl-3xl rounded-br-3xl p-8 flex flex-col items-center text-center hover:shadow-lg transition-all duration-300"
                             >
                                 {feature.icon}
                                 <h3 className="text-xl font-semibold mt-4 mb-2">
@@ -61,13 +63,14 @@ export default function WhyChooseUs() {
                     </div>
                     <div className='w-full flex justify-center items-center'>
 
-                        <button onClick={() => { window.location.href = 'https://wa.me/601124419414' }} className='w-auto zoom-up-in my-0 mx-auto px-4 py-2.5 bg-yellow-400 font-bold text-xl rounded-md shadow-md shadow-gray-400 cursor-pointer mt-6'>Get Special 20% Off Today</button>
+                        <button onClick={() => window.open('https://wa.me/601124419414', '_blank', 'noopener,noreferrer')}
+                            className='w-auto zoom-up-in my-0 mx-auto px-4 py-2.5 bg-yellow-400 font-bold text-xl rounded-md shadow-md shadow-gray-400 cursor-pointer mt-6'>Get Special 20% Off Today</button>
                     </div>
 
                 </div>
 
                 {/* Image */}
-                <div className='flex-1 w-full max-w-md lg:max-w-full'>
+                <div className='flex-1 w-full max-w-md lg:max-w-sm xl:max-w-xl'>
                     <img src={img} alt="Why Choose Us" className='w-full h-auto rounded-lg object-cover' />
                 </div>
             </div>
