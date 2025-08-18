@@ -56,7 +56,7 @@ export default function HeroSection() {
                                 transition={{ duration: 0.8, delay: 0.3 }}
                                 className="text-base sm:text-lg md:text-xl mt-4 sm:mt-10 font-semibold md:text-center lg:text-left"
                             >
-                                Comprehensive aircond care — servicing, repairs, leak fixes, troubleshooting, and installations in one place
+                                Get All Your Aircon Needs Sorted — from Servicing and Repairs to Leak Fixes and Installations, All in One Place!
                             </motion.p>
 
                             <motion.button
@@ -64,7 +64,7 @@ export default function HeroSection() {
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ duration: 0.6, delay: 0.6 }}
                                 onClick={() => { window.location.href = 'tel:+601124419414' }}
-                                className="w-auto mx-auto sm:w-auto lg:mx-0  py-6 px-5 font-semibold hover:bg-blue-700 transition-colors cursor-pointer bg-blue-600 mt-6 sm:mt-10 text-white uppercase text-sm sm:text-base md:text-lg flex justify-center items-center gap-2.5"
+                                className="w-auto mx-auto sm:w-auto lg:mx-0  py-6 px-5 font-semibold hover:bg-blue-700 transition-colors cursor-pointer bg-blue-600 mt-6 sm:mt-10 text-white  text-sm sm:text-base md:text-lg flex justify-center items-center gap-2.5"
                             >
                                 <FaPhoneAlt className="text-lg sm:text-xl md:text-2xl" /> Talk to Our Expert
                             </motion.button>

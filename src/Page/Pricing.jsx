@@ -128,7 +128,7 @@ export default function Pricing() {
   return (
     <section className="w-full h-auto px-4 md:px-10 xl:px-30 py-10 overflow-hidden ">
       <h1 className="text-3xl font-bold text-center text-gray-800 mb-10">
-        Our Pricing Plans
+        Best Aircon Service Plan
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 
@@ -158,7 +158,7 @@ export default function Pricing() {
               onClick={() => setActiveCard("wall")}
               className="mt-6 w-full cursor-pointer border border-emerald-500 rounded-lg px-5 py-3 text-lg font-semibold text-emerald-700 flex justify-center items-center gap-3 hover:bg-emerald-50"
             >
-              Price Details <MdKeyboardDoubleArrowRight />
+              See Full Pricing Details <MdKeyboardDoubleArrowRight />
             </button>
           </div>
         </div>
@@ -189,7 +189,7 @@ export default function Pricing() {
               onClick={() => setActiveCard("ceiling")}
               className="mt-6 cursor-pointer w-full border border-emerald-500 rounded-lg px-5 py-3 text-lg font-semibold text-emerald-700 flex justify-center items-center gap-3 hover:bg-emerald-50"
             >
-              Price Details <MdKeyboardDoubleArrowRight />
+              See Full Pricing Details <MdKeyboardDoubleArrowRight />
             </button>
           </div>
         </div>

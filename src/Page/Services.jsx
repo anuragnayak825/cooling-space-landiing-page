@@ -39,11 +39,10 @@ export default function Services() {
     <section className="py-10 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-2xl md:text-4xl font-bold text-center mb-4">
-          Trusted Aircon Services
+          Reliable & Trusted Aircon Services for Homes & Businesses
         </h2>
         <p className="w-full max-w-3xl font-semibold text-sm md:text-lg mb-8 text-center mx-auto">
-          From installation to upkeep, we’re committed to keeping your cooling
-          systems performing at their best, season after season.
+          From Installation to Upkeep, We're Committed to Keeping Your Cooling Systems at Peak Performance, Season After Season.
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">

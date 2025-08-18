@@ -101,7 +101,7 @@ export default function About() {
                         className="px-4 sm:px-6 cursor-pointer py-2 sm:py-3 lg:py-2 xl:py-3 font-bold text-lg tracking-wide bg-sky-500 hover:bg-sky-600 text-white rounded-md transition duration-300"
                         variants={fadeUp}
                     >
-                        Schedule My Appointment
+                        Get your aircon serviced today!
                     </motion.button>
                 </motion.div>
             </motion.div>

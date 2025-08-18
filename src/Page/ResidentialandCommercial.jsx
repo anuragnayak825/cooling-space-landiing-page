@@ -17,7 +17,7 @@ export default function ResidentialandCommercial() {
                             </h1>
                             <p className="text-lg font-medium text-center mt-4 text-white leading-relaxed">
                                 A comfortable and inviting home is essential for your family, and in Kuala Lumpur’s hot climate, keeping cool is key.
-                                At Super Tasker, we provide expert Residential Aircon Services — from installation to maintenance and repairs.
+                                At Cool Space pro solutions, we provide expert Residential Aircon Services — from installation to maintenance and repairs.
                                 Whether you’re upgrading to a new unit or need a quick tune-up, we’re here to keep your home cool and comfortable.
                             </p>
                             {/* <div className="flex justify-center items-center mt-6">
@@ -39,7 +39,7 @@ export default function ResidentialandCommercial() {
                             <p className="text-lg break-words font-medium text-center mt-4 text-white leading-relaxed">
                                 In Malaysia’s warm climate, particularly in bustling Kuala Lumpur, keeping indoor temperatures comfortable is crucial for any business.
                                 Whether you run an office, retail outlet, or industrial facility, a reliable air conditioning system is essential for employees and visitors alike.
-                                At Super Tasker, we provide complete commercial aircon solutions — from installation to maintenance and repairs — ensuring your business stays cool, efficient, and running smoothly all year round.
+                                At Cool Space pro solutions, we provide complete commercial aircon solutions — from installation to maintenance and repairs — ensuring your business stays cool, efficient, and running smoothly all year round.
                             </p>
                             {/* <div className="flex justify-center items-center mt-6">
                             <button onClick={()=>{window.location.href='https://wa.me/601124419414'}} className="text-lg font-semibold cursor-pointer group 
@@ -55,7 +55,7 @@ export default function ResidentialandCommercial() {
 
                     <div className='w-full mt-10 flex justify-center items-center'>
                         <button className='bg-gradient-to-br from-[#25D366] to-[#128C7E] shadow-md shadow-gray-800 rounded-md text-white text-xl cursor-pointer zoom-up-in font-bold tracking-wider w-auto px-6 py-3 xl:py-5'>
-                            WhatsApp Us To Get a Free Quote
+                            Get Your Free Quote on WhatsApp Now
                         </button>
                     </div>
 

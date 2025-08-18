@@ -16,9 +16,8 @@ export default function Footer1() {
                 />
 
                 <p className="mb-6 max-w-7xl mx-auto text-sm md:text-xl">
-                    If you are seeking for aircon installation, repair or maintenance
-                    providers, then you are at the right place. We are based in Kuala Lumpur and Selangor regions. And
-                    handle both residential aircon services and commercial aircon services.
+                    If you’re looking for aircon installation, repair, or maintenance services, you’re in the right place.
+                    We are based in Kuala Lumpur and Selangor, specializing in both residential and commercial aircon services. Reach out today for expert solutions to keep your space cool and comfortable.
                 </p>
 
                 <div className="flex flex-col md:flex-row justify-center gap-6 mb-6 max-w-4xl mx-auto">
@@ -30,7 +29,7 @@ export default function Footer1() {
                     <div className="flex items-center gap-3 bg-[#1f3356] p-3 rounded-md w-full md:w-auto justify-center md:justify-start">
                         <FaEnvelope className="text-yellow-400 text-lg" />
                         <span>
-                            info@accoolncool.com</span>
+                            coolspaceprosolution@gmail.com</span>
                     </div>
 
                 </div>
