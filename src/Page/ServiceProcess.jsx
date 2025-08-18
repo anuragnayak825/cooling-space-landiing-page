@@ -45,10 +45,10 @@ export default function ServiceProcess() {
                 {steps.map((step) => (
                     <div
                         key={step.id}
-                        className="flex flex-col p-8 bg-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+                        className="flex flex-col items-center xl:items-start text-center xl:text-left p-8 bg-white rounded-tl-2xl rounded-br-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
                     >
                         <div className="mb-4">{step.icon}</div>
-                        <h3 className="text-2xl font-bold text-gray-800">
+                        <h3 className="text-2xl md:text-xl lg:text-xl xl:text-2xl font-bold text-gray-800">
                             {step.title}
                         </h3>
                         <p className="text-gray-500 text-lg mt-2">{step.desc}</p>
