@@ -52,11 +52,8 @@ export default function About() {
                 className="w-full lg:w-1/2 flex justify-center"
 
             >
-                <motion.img
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.3 }}
-                    variants={slideLeft}
+                <img
+                    data-aos="zoom-in-right"
                     src={Aboutimg}
                     alt="Aircon Service"
                     className="w-full max-w-[600px] h-auto rounded-md shadow-md object-cover"

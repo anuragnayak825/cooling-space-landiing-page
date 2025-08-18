@@ -48,6 +48,7 @@ export default function Services() {
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service, i) => (
             <div
+            
               key={i}
               className="bg-white shadow-lg rounded-2xl overflow-hidden transition-all duration-300 flex flex-col"
             >

@@ -25,19 +25,19 @@ export default function HeroSection() {
 
                             {/* Decorative corners */}
                             {/* Decorative corners */}
-                            <span className="absolute hidden lg:block -top-2 -left-2  md:w-3/4 h-0.5 bg-blue-500"></span>
-                            <span className="absolute hidden lg:block -top-2 -left-2 w-6 sm:w-8 md:w-6 lg:w-6 h-6 sm:h-8 md:h-6 bg-blue-500"></span>
-                            <span className="absolute hidden lg:block -top-2 right-[20%] sm:right-[26%] w-0.5 h-8 sm:h-10 md:h-12 bg-blue-500"></span>
-                            <span className="absolute hidden lg:block -top-2 -left-2 w-0.5 h-1/2 sm:h-[70%] md:h-[85%] xl:h-[86%] bg-blue-500 "></span>
-                            <span className="absolute hidden lg:block bottom-[69px] -left-2 w-6 sm:w-8 md:w-10 h-0.5 bg-blue-500"></span>
+                            <span data-aos="fade-right" className="absolute hidden lg:block -top-2 -left-2  md:w-3/4 h-0.5 bg-blue-500"></span>
+                            <span data-aos="fade-right" className="absolute hidden lg:block -top-2 -left-2 w-6 sm:w-8 md:w-6 lg:w-6 h-6 sm:h-8 md:h-6 bg-blue-500"></span>
+                            <span data-aos="fade-right" className="absolute hidden lg:block -top-2 right-[20%] sm:right-[26%] w-0.5 h-8 sm:h-10 md:h-12 bg-blue-500"></span>
+                            <span data-aos="fade-right" className="absolute hidden lg:block -top-2 -left-2 w-0.5 h-1/2 sm:h-[70%] md:h-[85%] xl:h-[86%] bg-blue-500 "></span>
+                            <span data-aos="fade-right" className="absolute hidden lg:block bottom-[69px] -left-2 w-6 sm:w-8 md:w-10 h-0.5 bg-blue-500"></span>
 
 
                             {/* Decorative corners */}
-                            <span className="absolute   block lg:hidden   -top-2 -left-2 w-10 sm:w-12 h-1 bg-blue-500"></span>
-                            <span className="absolute   block lg:hidden  -top-2 -left-2 w-1 h-10 sm:h-12 bg-blue-500"></span>
+                            <span data-aos="fade-right" className="absolute   block lg:hidden   -top-2 -left-2 w-10 sm:w-12 h-1 bg-blue-500"></span>
+                            <span data-aos="fade-right" className="absolute   block lg:hidden  -top-2 -left-2 w-1 h-10 sm:h-12 bg-blue-500"></span>
 
-                            <span className="absolute   block lg:hidden -bottom-2 -right-2 w-10 sm:w-12 h-1 bg-blue-500"></span>
-                            <span className="absolute block lg:hidden  -bottom-2 -right-2 w-1 h-10 sm:h-12 bg-blue-500"></span>
+                            <span data-aos="fade-left" className="absolute   block lg:hidden -bottom-2 -right-2 w-10 sm:w-12 h-1 bg-blue-500"></span>
+                            <span data-aos="fade-left" className="absolute block lg:hidden  -bottom-2 -right-2 w-1 h-10 sm:h-12 bg-blue-500"></span>
 
 
 

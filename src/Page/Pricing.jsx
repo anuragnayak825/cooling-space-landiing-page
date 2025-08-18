@@ -119,7 +119,7 @@ export default function Pricing() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 
         {/* Wall Mounted Card */}
-        <div className="border border-gray-300 bg-white shadow-lg rounded-3xl overflow-hidden transition-transform">
+        <div  data-aos="fade-up-right"  className="border border-gray-300 bg-white shadow-lg rounded-3xl overflow-hidden transition-transform">
           <div className="relative h-[320px] w-full">
             <img
               src="https://raisingwebsolutions.co.in/fast-aircon-landing/images/wall-mounted-new.jpg"
@@ -150,7 +150,7 @@ export default function Pricing() {
         </div>
 
         {/* Ceiling Card */}
-        <div className="border border-gray-300 bg-white shadow-lg rounded-3xl overflow-hidden transition-transform ">
+        <div data-aos="fade-up-left" className="border border-gray-300 bg-white shadow-lg rounded-3xl overflow-hidden transition-transform ">
           <div className="relative h-[320px] w-full">
             <img
               src="https://raisingwebsolutions.co.in/fast-aircon-landing/images/ceiling.png"
