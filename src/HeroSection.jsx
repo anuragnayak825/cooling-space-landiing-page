@@ -29,7 +29,7 @@ export default function HeroSection() {
                             <span data-aos="fade-right" className="absolute hidden xl:block -top-2 -left-2  w-6 sm:w-8 md:w-6 lg:w-6 h-6 sm:h-8 md:h-6 bg-blue-500"></span>
                             <span data-aos="fade-right" className="absolute hidden xl:block -top-2 right-[42%] sm:right-[26%] w-0.5 h-8 sm:h-10 md:h-12 bg-blue-500"></span>
                             <span data-aos="fade-right" className="absolute hidden xl:block -top-2 -left-2 w-0.5 h-1/2 sm:h-[70%] md:h-[85%] xl:h-[86%] bg-blue-500 "></span>
-                            <span data-aos="fade-right" className="absolute hidden xl:block bottom-[69px] -left-2 w-6 sm:w-8 md:w-10 h-0.5 bg-blue-500"></span>
+                            <span data-aos="fade-right" className="absolute hidden xl:block bottom-[67px] -left-2 w-6 sm:w-8 md:w-10 h-0.5 bg-blue-500"></span>
 
 
                             {/* Decorative corners */}
@@ -45,7 +45,7 @@ export default function HeroSection() {
                                 initial={{ x: -100, opacity: 0 }}
                                 animate={{ x: 0, opacity: 1 }}
                                 transition={{ duration: 0.8 }}
-                                className="text-black text-xl sm:text-3xl md:text-4xl xl:text-6xl tracking-wide font-bold md:text-center  lg:text-left"
+                                className="text-black text-xl sm:text-3xl md:text-4xl xl:text-[50px] tracking-wide font-bold md:text-center  lg:text-left"
                             >
                                 Your Trusted Aircon Experts in Selangor <br className=' hidden md:block' /> & Kuala Lumpur
                             </motion.h1>
