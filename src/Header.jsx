@@ -21,7 +21,7 @@ export default function Header() {
                 {/* Logo */}
                 <div>
                     <img
-                        onClick={() => nav('/')}
+                        onClick={() => nav('/aircon-service-kl/')}
                         src={logo}
                         alt="Logo"
                         className='cursor-pointer w-32 md:w-40'

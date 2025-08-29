@@ -54,7 +54,7 @@ export default function Footer1() {
                     © 2025 Cool Space Pro Solutions. All Rights Reserved.
                 </p>
 
-                <NavLink to={'/privacy-policy'} className="text-lg mt-4 cursor-pointer hover:underline text-center max-w-7xl mx-auto">
+                <NavLink to={'/aircon-service-kl/privacy-policy'} className="text-lg mt-4 cursor-pointer hover:underline text-center max-w-7xl mx-auto">
                     Privacy Policy
                 </NavLink>
             </div>

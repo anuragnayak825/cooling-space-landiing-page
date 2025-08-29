@@ -52,9 +52,7 @@ export default function ServiceProcess() {
                             {step.title}
                         </h3>
                         <p className="text-gray-500 text-lg mt-2">{step.desc}</p>
-                        <span className="absolute top-4 right-6 text-6xl font-bold text-gray-100">
-                            {step.id}
-                        </span>
+                       
                     </div>
                 ))}
             </div>

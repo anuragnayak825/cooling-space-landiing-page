@@ -48,7 +48,7 @@ export default function Services() {
         <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
           {services.map((service, i) => (
             <div
-
+              data-aos={i == 0 ? "fade-right" : i == 2 ? "fade-left" : "zoom-out-up"}
               key={i}
               className="bg-white shadow-lg rounded-2xl overflow-hidden transition-all duration-300 flex flex-col"
             >

@@ -9,7 +9,7 @@ export default function HeroSection() {
         <div
             className="w-full relative"
             style={{
-                backgroundImage: "url('/cool-space.webp')",
+                backgroundImage: `url(${herosection})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat"

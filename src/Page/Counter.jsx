@@ -6,7 +6,7 @@ const countersData = [
     id: 1,
     icon: <FaTools size={40} className="text-blue-600" />,
     label: "Years Experience",
-    target: 25,
+    target: 22,
   },
   {
     id: 2,
