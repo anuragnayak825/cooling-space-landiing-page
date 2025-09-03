@@ -16,7 +16,7 @@ export default function ResidentialandCommercial() {
                                 Residential Aircon Services
                             </h1>
                             <p className="text-lg font-medium text-center mt-4 text-white leading-relaxed">
-                                A comfortable and inviting home is essential for your family, and in Kuala Lumpur’s hot climate, keeping cool is key.
+                                A comfortable and inviting home is essential for your family, and in Melaka  hot climate, keeping cool is key.
                                 At Cool Space pro solutions, we provide expert Residential Aircon Services — from installation to maintenance and repairs.
                                 Whether you’re upgrading to a new unit or need a quick tune-up, we’re here to keep your home cool and comfortable.
                             </p>
@@ -37,7 +37,7 @@ export default function ResidentialandCommercial() {
                                 Commercial Aircon Service
                             </h1>
                             <p className="text-lg break-words font-medium text-center mt-4 text-white leading-relaxed">
-                                In Malaysia’s warm climate, particularly in bustling Kuala Lumpur, keeping indoor temperatures comfortable is crucial for any business.
+                                In Malaysia’s warm climate, particularly in bustling Melaka , keeping indoor temperatures comfortable is crucial for any business.
                                 Whether you run an office, retail outlet, or industrial facility, a reliable air conditioning system is essential for employees and visitors alike.
                                 At Cool Space pro solutions, we provide complete commercial aircon solutions — from installation to maintenance and repairs — ensuring your business stays cool, efficient, and running smoothly all year round.
                             </p>

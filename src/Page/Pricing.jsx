@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { MdOutlineArrowRight, MdKeyboardDoubleArrowRight } from "react-icons/md";
+import img1 from '../assets/aircon-services-repair-malaysia.webp'
+import img2 from '../assets/commercial-industrial-ceiling-aircon-service.webp'
 
 export default function Pricing() {
   const [activeCard, setActiveCard] = useState(null);
@@ -128,7 +130,7 @@ export default function Pricing() {
   return (
     <section className="w-full h-auto px-4 md:px-10 xl:px-30 py-10 overflow-hidden ">
       <h1 className="text-3xl font-bold text-center text-gray-800 mb-10">
-        Best Aircon Service Plan
+        Save Money & Protect Your Aircond Units with <br /> Our Service Plans
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 
@@ -136,9 +138,9 @@ export default function Pricing() {
         <div data-aos="fade-up-right" className="border border-gray-300 bg-white shadow-lg rounded-3xl overflow-hidden transition-transform">
           <div className="relative h-[320px] w-full">
             <img
-              src="https://raisingwebsolutions.co.in/fast-aircon-landing/images/wall-mounted-new.jpg"
+              src={img1}
               alt="Wall Mounted"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
             />
             <div className="absolute bottom-0 left-0 w-full bg-black/50 text-white p-5">
               <h1 className="text-2xl font-bold">Wall Mounted Aircon</h1>
@@ -167,9 +169,9 @@ export default function Pricing() {
         <div data-aos="fade-up-left" className="border border-gray-300 bg-white shadow-lg rounded-3xl overflow-hidden transition-transform ">
           <div className="relative h-[320px] w-full">
             <img
-              src="https://raisingwebsolutions.co.in/fast-aircon-landing/images/ceiling.png"
+              src={img2}
               alt="Ceiling Cassette"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
             />
             <div className="absolute bottom-0 left-0 w-full bg-black/50 text-white p-5">
               <h1 className="text-2xl font-bold">Cassette / Ceiling Aircon</h1>

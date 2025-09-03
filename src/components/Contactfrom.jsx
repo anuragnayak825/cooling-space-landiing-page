@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
 import axios from "axios";
+import { useNavigate } from "react-router-dom"; // ✅ Added
 
 export default function ContactForm() {
   const [isShow, setIsShow] = useState(false);
@@ -13,8 +14,8 @@ export default function ContactForm() {
   });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  const [success, setSuccess] = useState("");
   const dropdownRef = useRef(null);
+  const navigate = useNavigate(); // ✅ for redirect
 
   // ✅ phone formatting
   const formatPhone = (value) => {
@@ -50,7 +51,6 @@ export default function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
-    setSuccess("");
 
     if (
       !formData.name.trim() ||
@@ -70,12 +70,11 @@ export default function ContactForm() {
       data.append("address", formData.address);
       data.append("message", formData.message);
 
-      const res = await axios.post("/contact.php", data); // 👈 apna backend URL
+      const res = await axios.post("/aircond-service/contact.php", data); // 👈 apna backend URL
 
       if (res.data.success) {
-        setSuccess("✅ Message sent successfully!");
-        setFormData({ name: "", phone: "", address: "", message: "" });
-        setPhone("");
+        // ✅ redirect after success
+        navigate("/aircond-service/thank-you");
       } else {
         setError("❌ Error sending message. Try again.");
       }
@@ -106,9 +105,7 @@ export default function ContactForm() {
         Tell Us What You Need
       </h1>
 
-      {/* ✅ Error / Success Messages */}
       {error && <p className="text-red-500 text-sm">{error}</p>}
-      {success && <p className="text-green-600 text-sm">{success}</p>}
 
       {/* Name */}
       <div className="relative w-full">

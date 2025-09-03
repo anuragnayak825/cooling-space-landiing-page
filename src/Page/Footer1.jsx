@@ -17,7 +17,7 @@ export default function Footer1() {
 
                 <p className="mb-6 max-w-7xl mx-auto text-sm md:text-xl">
                     If you’re looking for aircon installation, repair, or maintenance services, you’re in the right place.
-                    We are based in Kuala Lumpur and Selangor, specializing in both residential and commercial aircon services. Reach out today for expert solutions to keep your space cool and comfortable.
+                    We are based in Melaka  and Selangor, specializing in both residential and commercial aircon services. Reach out today for expert solutions to keep your space cool and comfortable.
                 </p>
 
                 <div className="flex flex-col md:flex-row justify-center gap-6 mb-6 max-w-4xl mx-auto">
@@ -54,7 +54,7 @@ export default function Footer1() {
                     © 2025 Cool Space Pro Solutions. All Rights Reserved.
                 </p>
 
-                <NavLink to={'/aircon-service-kl/privacy-policy'} className="text-lg mt-4 cursor-pointer hover:underline text-center max-w-7xl mx-auto">
+                <NavLink to={'/aircond-service/privacy-policy'} className="text-lg mt-4 cursor-pointer hover:underline text-center max-w-7xl mx-auto">
                     Privacy Policy
                 </NavLink>
             </div>

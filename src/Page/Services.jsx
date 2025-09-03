@@ -36,7 +36,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="py-10 bg-gray-50">
+    <section className="py-10 bg-gray-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-2xl md:text-4xl font-bold text-center mb-4">
           Reliable & Trusted Aircon Services for Homes & Businesses
@@ -48,7 +48,7 @@ export default function Services() {
         <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
           {services.map((service, i) => (
             <div
-              data-aos={i == 0 ? "fade-right" : i == 2 ? "fade-left" : "zoom-out-up"}
+              data-aos={i == 0 ? "fade-right" : i == 2 ? "fade-left" : "zoom-in-up"}
               key={i}
               className="bg-white shadow-lg rounded-2xl overflow-hidden transition-all duration-300 flex flex-col"
             >

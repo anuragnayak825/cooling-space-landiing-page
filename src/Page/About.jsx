@@ -92,7 +92,7 @@ export default function About() {
                         variants={slideRight}
                     >
                         If you’re looking for expert aircon installation, repair, or maintenance, you’ve come to the right place.
-                        Based in Kuala Lumpur, we cater to both residential and commercial clients, delivering dependable,
+                        Based in Melaka , we cater to both residential and commercial clients, delivering dependable,
                         efficient, and professional aircond services tailored to each customer’s unique needs.
                     </motion.p>
 
