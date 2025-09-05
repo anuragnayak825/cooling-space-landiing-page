@@ -16,9 +16,9 @@ export default function OfferSection() {
       </div>
 
       {/* CTA Button */}
-      <button onClick={() => { window.location.href = 'tel:+601124419414' }} className="w-full sm:w-auto bg-white text-green-700 font-bold rounded-md px-5 sm:px-6 py-3 hover:bg-green-100 transition flex items-center justify-center gap-2">
-        <FaPhoneAlt />
-        Claim Now
+      <button onClick={() => { window.location.href = 'tel:+601124419414' }} className="w-full text-lg sm:w-auto bg-white text-green-700 font-bold rounded-md px-5 sm:px-6 py-3 hover:bg-green-100 transition flex items-center justify-center gap-2 shadow-inner">
+        Get Quote with Special 20% Off Today
+        
       </button>
     </section>
   );

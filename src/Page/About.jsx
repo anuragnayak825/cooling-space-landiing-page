@@ -1,110 +1,105 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import Aboutimg from '../assets/air_flow.webp';
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Service from "../assets/service.webp";
+import Install from "../assets/install.webp";
+import maintain from "../assets/Repair.webp";
 
 export default function About() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
 
-    const slideRight = {
-        hidden: { opacity: 0, x: 60 },
-        visible: {
-            opacity: 1,
-            x: 0,
-            transition: { duration: 1, ease: [0.4, 0, 0.2, 1], delay: 0.3 }
-        }
-    };
+  return (
+    <div className="w-full h-auto py-10 px-4 xl:px-24">
+      <h1 className="text-xl md:text-2xl lg:text-4xl font-bold text-gray-800 text-center">
+        Cool Benefits of Aircon Service
+      </h1>
+      <p className="mt-4 text-base md:text-lg lg:text-xl text-gray-600 font-semibold text-center ">
+        Scheduling AC servicing every 6–12 months ensures peak performance and{" "}
+        <br className=" hidden md:block" /> long-lasting efficiency.
+      </p>
 
-    const slideLeft = {
-        hidden: { opacity: 0, x: -30 },
-        visible: {
-            opacity: 1,
-            x: 0,
-            transition: { duration: 1, ease: [0.4, 0, 0.2, 1] }
-        }
-    };
-
-    // Container for text content to stagger children animation
-    const contentContainer = {
-        hidden: {},
-        visible: {
-            transition: {
-                staggerChildren: 0.15,
-                delayChildren: 0.5,
-                ease: [0.4, 0, 0.2, 1],
-            }
-        }
-    };
-
-    const fadeUp = {
-        hidden: { opacity: 0, y: 40 },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: { duration: 0.8, ease: [0.4, 0, 0.2, 1] }
-        }
-    };
-
-    return (
+      <div className="w-full mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {/* Card 1 */}
         <div
-            className="w-full overflow-hidden h-auto px-4 sm:px-6 md:px-10 lg:px-10 xl:px-20 py-8 lg:py-16 flex flex-col lg:flex-row items-center lg:items-start gap-8"
+          data-aos="fade-up"
+          className="relative w-full h-auto border border-gray-300 rounded-tl-[20px] rounded-br-[20px] overflow-hidden"
         >
-            {/* Left - Image */}
-            <div
-                className="w-full lg:w-1/2 flex justify-center"
+          {/* background image */}
+          <img
+            src={Service}
+            alt=""
+            className="w-full h-full absolute inset-0 object-cover -z-10"
+          />
+          {/* overlay */}
+          <div className="absolute inset-0 bg-white/90 z-0"></div>
 
-            >
-                <img
-                    data-aos="zoom-in-right"
-                    src={Aboutimg}
-                    alt="Aircon Service"
-                    className="w-full max-w-[600px] lg:max-w-[640px] xl:max-w-[600px] h-auto rounded-md shadow-md object-cover"
-                />
-            </div>
-
-            {/* Right - Content */}
-            <motion.div
-                className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left space-y-6"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
-                variants={slideRight}
-            >
-                {/* Add a container to stagger children */}
-                <motion.div
-                    variants={contentContainer}
-                    className="w-full flex flex-col items-center lg:items-start space-y-6 lg:space-y-3 xl:space-y-6 text-center lg:text-left"
-                >
-                    <motion.button
-                        className="px-4 py-2 font-semibold bg-gray-50 rounded-md shadow-md shadow-gray-300 text-base sm:text-lg lg:text-sm xl:text-lg"
-                        variants={slideRight}
-                    >
-                        You’re in the Right Place
-                    </motion.button>
-
-                    <motion.h1
-                        className="text-2xl sm:text-3xl md:text-4xl lg:text-[28px] xl:text-[40px] font-bold leading-snug"
-                        variants={slideRight}
-                    >
-                        Find Nearest Service From Your Home
-                    </motion.h1>
-
-                    <motion.p
-                        className="text-base sm:text-lg lg:text-sm xl:text-lg font-medium text-gray-600 leading-relaxed"
-                        variants={slideRight}
-                    >
-                        If you’re looking for expert aircon installation, repair, or maintenance, you’ve come to the right place.
-                        Based in Melaka , we cater to both residential and commercial clients, delivering dependable,
-                        efficient, and professional aircond services tailored to each customer’s unique needs.
-                    </motion.p>
-
-                    <motion.button
-                        onClick={() => { window.location.href = 'https://wa.me/601124419414' }}
-                        className="px-4 sm:px-6 cursor-pointer py-2 sm:py-3 lg:py-2 xl:py-3 font-bold text-lg tracking-wide bg-sky-500 hover:bg-sky-600 text-white rounded-md transition duration-300"
-                        variants={fadeUp}
-                    >
-                        Get your aircon serviced today!
-                    </motion.button>
-                </motion.div>
-            </motion.div>
+          {/* content */}
+          <div className="relative z-10 px-2 md:px-6 py-5">
+            <h1 className="text-xl text-center md:text-2xl lg:text-[28px] font-bold text-gray-700">
+              Breathe Cleaner, Fresher Air
+            </h1>
+            <p className="text-center text-base lg:text-xl mt-8 text-gray-700 font-medium pb-5 md:pb-8 lg:pb-20">
+              When filters become dirty or clogged, they fail to trap dust,
+              allergens, and pollutants, resulting in poor indoor air quality.
+              Regular servicing ensures filters are cleaned or replaced, greatly
+              enhancing the air you breathe at home or in the workplace.
+            </p>
+          </div>
         </div>
-    );
+
+        {/* Card 2 */}
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          className="relative w-full h-auto border border-gray-300 rounded-tl-[20px] rounded-br-[20px] overflow-hidden"
+        >
+          <img
+            src={Install}
+            alt=""
+            className="w-full h-full absolute inset-0 object-cover -z-10"
+          />
+          <div className="absolute inset-0 bg-white/90 z-0"></div>
+
+          <div className="relative z-10 px-2 md:px-6 py-5">
+            <h1 className="text-xl text-center md:text-2xl lg:text-[28px] font-bold text-gray-700">
+              Save More on Your Bills
+            </h1>
+            <p className="text-center text-base lg:text-xl mt-8 text-gray-700 font-medium pb-5 md:pb-8 lg:pb-20">
+              Routine maintenance keeps your AC components clean and in top
+              condition. This lowers energy usage and ensures maximum
+              efficiency, helping reduce electricity bills and environmental
+              impact.
+            </p>
+          </div>
+        </div>
+
+        {/* Card 3 */}
+        <div
+          data-aos="fade-up"
+          data-aos-delay="400"
+          className="relative w-full h-auto border border-gray-300 rounded-tl-[20px] rounded-br-[20px] overflow-hidden"
+        >
+          <img
+            src={maintain}
+            alt=""
+            className="w-full h-full absolute inset-0 object-cover -z-10"
+          />
+          <div className="absolute inset-0 bg-white/90 z-0"></div>
+
+          <div className="relative z-10 px-2 md:px-6 py-5">
+            <h1 className="text-xl text-center md:text-2xl lg:text-[28px] font-bold text-gray-700">
+              Ensure Long-Term Reliability
+            </h1>
+            <p className="text-center text-base lg:text-xl mt-8 text-gray-700 font-medium pb-5 md:pb-8 lg:pb-20">
+              Regular servicing detects and fixes small issues before they
+              worsen, helping extend the lifespan of your AC, avoid expensive
+              replacements, and minimize unexpected breakdowns.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }

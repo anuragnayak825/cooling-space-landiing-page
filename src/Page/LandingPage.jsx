@@ -13,6 +13,7 @@ import Footer1 from './Footer1'
 import Pricing from './Pricing'
 import ServiceLocations from './ServiceLocations'
 import ServiceProcess from './ServiceProcess'
+import Melaka from './Melaka'
 
 // import HeroSection from '../HeroSection'
 
@@ -31,7 +32,8 @@ export default function LandingPage() {
             <Counter />
             <CTABanner />
 
-            <ServiceProcess/>
+            {/* <ServiceProcess/> */}
+            <Melaka/>
             {/* <ServiceLocations/> */}
             {/* <ReviewTimeline /> */}
             <Footer1 />

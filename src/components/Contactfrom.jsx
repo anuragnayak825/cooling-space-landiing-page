@@ -19,8 +19,8 @@ export default function ContactForm() {
 
   // ✅ phone formatting
   const formatPhone = (value) => {
-    const digits = value.replace(/\D/g, "").slice(0, 10); // max 10 digits
-    const match = digits.match(/^(\d{3})(\d{3})(\d{0,4})$/);
+    const digits = value.replace(/\D/g, "").slice(0, 12); // max 10 digits
+    const match = digits.match(/^(\d{3})(\d{3})(\d{0,6})$/);
     if (match) {
       return `${match[1]}-${match[2]} ${match[3]}`.trim();
     } else if (digits.length <= 6) {
@@ -67,14 +67,14 @@ export default function ContactForm() {
       const data = new FormData();
       data.append("name", formData.name);
       data.append("phone", formData.phone);
-      data.append("address", formData.address);
+      data.append("email", formData.address);
       data.append("message", formData.message);
 
-      const res = await axios.post("/aircond-service/contact.php", data); // 👈 apna backend URL
+      const res = await axios.post("/contact.php", data); // 👈 apna backend URL
 
       if (res.data.success) {
         // ✅ redirect after success
-        navigate("/aircond-service/thank-you");
+        navigate("/thank-you");
       } else {
         setError("❌ Error sending message. Try again.");
       }
@@ -101,9 +101,10 @@ export default function ContactForm() {
       onSubmit={handleSubmit}
       className="w-full lg:max-w-md mx-auto border border-gray-300 bg-white px-4 py-6 sm:px-6 md:px-8 rounded-md shadow-xl shadow-gray-500 space-y-6"
     >
-      <h1 className="text-center text-xl md:text-2xl font-bold text-gray-800">
-        Tell Us What You Need
+      <h1 className="text-left text-xl md:text-2xl font-bold text-gray-800">
+        Get a Free Quote Today – SPECIAL 20% Off
       </h1>
+      <p className="text-lg font-normal">Fill the form for 20% off Aircond Service</p>
 
       {error && <p className="text-red-500 text-sm">{error}</p>}
 
@@ -141,9 +142,8 @@ export default function ContactForm() {
           />
           <IoMdArrowDropdown
             onClick={() => setIsShow(!isShow)}
-            className={`cursor-pointer transition-transform ${
-              isShow ? "rotate-180" : ""
-            }`}
+            className={`cursor-pointer transition-transform ${isShow ? "rotate-180" : ""
+              }`}
           />
         </div>
 
@@ -168,7 +168,7 @@ export default function ContactForm() {
           onChange={handleChange}
           required
           className="peer h-14 w-full border-2 placeholder:text-base border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-blue-600 rounded-md px-4"
-          placeholder="Your Address"
+          placeholder="Email Address"
         />
         <label
           htmlFor="address"
@@ -176,7 +176,7 @@ export default function ContactForm() {
              peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400
              peer-focus:-top-2 peer-focus:text-base peer-focus:text-blue-600"
         >
-          Your Address
+          Email Address
         </label>
       </div>
 

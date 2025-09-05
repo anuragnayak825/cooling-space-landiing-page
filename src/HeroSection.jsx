@@ -47,21 +47,21 @@ export default function HeroSection() {
                             </motion.h1>
 
                             {/* Sub Text */}
-                            <motion.p
+                            {/* <motion.p
                                 initial={{ x: 100, opacity: 0 }}
                                 animate={{ x: 0, opacity: 1 }}
                                 transition={{ duration: 0.8, delay: 0.3 }}
                                 className="text-base sm:text-lg md:text-xl mt-4 sm:mt-10 font-semibold md:text-center lg:text-left"
                             >
                                 Get All Your Aircon Needs Sorted — from Servicing and Repairs to Leak Fixes and Installations, All in One Place!
-                            </motion.p>
+                            </motion.p> */}
 
                             {/* Services Line */}
                             <motion.p
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 transition={{ duration: 0.8, delay: 0.5 }}
-                                className="text-sm sm:text-base md:text-xl mt-3 sm:mt-5 text-gray-900 font-medium md:text-center lg:text-left"
+                                className="text-sm sm:text-base md:text-2xl mt-3 sm:mt-5 text-gray-900 font-medium md:text-center lg:text-left"
                             >
                                 ✔ Servicing &nbsp; ✔ Repairs &nbsp; ✔ Leak Fixes &nbsp; ✔ Installations <br /> <br />
                                 Quick Response | Professional Service | 100% Satisfaction

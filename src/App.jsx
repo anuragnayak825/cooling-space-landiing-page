@@ -24,9 +24,9 @@ function App() {
       <BrowserRouter>
 
         <Routes>
-          <Route path='/aircond-service/' element={<LandingPage />} />
-          <Route path='/aircond-service/privacy-policy' element={<Privacy_Policy />} />
-          <Route path='/aircond-service/thank-you' element={<ThankyouPage />} />
+          <Route path='/' element={<LandingPage />} />
+          <Route path='/privacy-policy' element={<Privacy_Policy />} />
+          <Route path='/thank-you' element={<ThankyouPage />} />
 
         </Routes>
       </BrowserRouter>

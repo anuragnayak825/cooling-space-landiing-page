@@ -34,7 +34,7 @@ export default function ResidentialandCommercial() {
                         {/* Commercial Section */}
                         <div className="max-w-2xl h-full flex flex-col justify-center">
                             <h1 className="text-white text-3xl text-center font-semibold">
-                                Commercial Aircon Service
+                                Commercial Aircon Services
                             </h1>
                             <p className="text-lg break-words font-medium text-center mt-4 text-white leading-relaxed">
                                 In Malaysia’s warm climate, particularly in bustling Melaka , keeping indoor temperatures comfortable is crucial for any business.
@@ -55,7 +55,8 @@ export default function ResidentialandCommercial() {
 
                     <div className='w-full mt-10 flex justify-center items-center'>
                         <button className='bg-gradient-to-br from-[#25D366] to-[#128C7E] shadow-md shadow-gray-800 rounded-md text-white text-xl cursor-pointer zoom-up-in font-bold tracking-wider w-auto px-6 py-3 xl:py-5'>
-                            Get Your Free Quote on WhatsApp Now
+                            Get a Free Quote Today
+                            Special 20% off
                         </button>
                     </div>
 
